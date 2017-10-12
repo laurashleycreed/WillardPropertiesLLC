@@ -18,6 +18,11 @@ namespace WillardPropertiesLLC
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Properties",
+                url: "Properties/{action}",
+                defaults: new { controller = "Properties", action = "Index"}
+            );
         }
     }
 }
